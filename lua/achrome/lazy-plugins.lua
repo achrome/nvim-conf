@@ -11,6 +11,12 @@ require('lazy').setup({
   require 'achrome.plugins.mini',
   require 'achrome.plugins.lualine',
   require 'achrome.plugins.lazygit',
+  require 'achrome.plugins.autopairs',
+  require 'achrome.plugins.dressing',
+  require 'achrome.plugins.notify',
+  require 'achrome.plugins.noice',
+  require 'achrome.plugins.ibl',
+  require 'achrome.plugins.gitsigns',
 }, {
   performance = {
     rtp = {
