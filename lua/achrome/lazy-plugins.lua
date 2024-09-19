@@ -17,6 +17,7 @@ require('lazy').setup({
   require 'achrome.plugins.noice',
   require 'achrome.plugins.ibl',
   require 'achrome.plugins.gitsigns',
+  require 'achrome.plugins.lint',
 }, {
   performance = {
     rtp = {
