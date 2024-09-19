@@ -10,6 +10,7 @@ require('lazy').setup({
   require 'achrome.plugins.which-key',
   require 'achrome.plugins.mini',
   require 'achrome.plugins.lualine',
+  require 'achrome.plugins.lazygit',
 }, {
   performance = {
     rtp = {
