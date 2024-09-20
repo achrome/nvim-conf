@@ -18,6 +18,11 @@ require('lazy').setup({
   require 'achrome.plugins.ibl',
   require 'achrome.plugins.gitsigns',
   require 'achrome.plugins.lint',
+  require 'achrome.plugins.render-markdown',
+  require 'achrome.plugins.flash',
+  require 'achrome.plugins.trouble',
+  require 'achrome.plugins.todo-comments',
+  require 'achrome.plugins.grug-far',
 }, {
   performance = {
     rtp = {
