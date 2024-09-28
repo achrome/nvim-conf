@@ -60,3 +60,5 @@ map('n', '<leader><tab>[', '<cmd>tabprevious<cr>', { desc = 'Previous Tab' })
 
 map('n', '<leader>qq', '<cmd>qa<cr>', { desc = 'Quit All' })
 map('n', '<leader>cm', '<cmd>Mason<cr>', { desc = '[C]onfigure [M]ason' })
+
+map('n', '<leader>bd', '<cmd>bd<cr>', { desc = '[B]uffer [D]elete' })
