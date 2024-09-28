@@ -5,7 +5,14 @@ return {
     event = 'VeryLazy',
     opts = function()
       require('lualine').setup {
-        theme = 'eldritch',
+        options = {
+          theme = 'eldritch',
+          disabled_filetypes = {
+            statusline = {
+              'neo-tree',
+            },
+          },
+        },
       }
     end,
   },
