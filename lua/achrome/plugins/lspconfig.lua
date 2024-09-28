@@ -20,6 +20,11 @@ return {
 
       'hrsh7th/cmp-nvim-lsp',
     },
+    opts = {
+      servers = {
+        taplo = {},
+      },
+    },
     config = function()
       vim.api.nvim_create_autocmd('LspAttach', {
         group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
