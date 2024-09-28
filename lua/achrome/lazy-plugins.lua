@@ -24,6 +24,7 @@ require('lazy').setup({
   require 'achrome.plugins.todo-comments',
   require 'achrome.plugins.grug-far',
   require 'achrome.plugins.bufferline',
+  require 'achrome.plugins.neotest',
 }, {
   performance = {
     rtp = {
