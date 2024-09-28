@@ -1,27 +1,27 @@
 return {
   {
-    "nvim-neo-tree/neo-tree.nvim",
+    'nvim-neo-tree/neo-tree.nvim',
     dependencies = {
-      { "MunifTanjim/nui.nvim" },
-      { "nvim-tree/nvim-web-devicons" },
+      { 'MunifTanjim/nui.nvim' },
+      { 'nvim-tree/nvim-web-devicons' },
     },
-    cmd = { "Neotree" },
+    cmd = { 'Neotree' },
     keys = {
       {
-	"<leader>e",
-	function()
-	  require("neo-tree.command").execute({ toggle = true, dir = vim.uv.cwd() })
-	end,
+        '<leader>e',
+        function()
+          require('neo-tree.command').execute { toggle = true, dir = vim.uv.cwd() }
+        end,
+        desc = 'Toggle Neo-tree',
       },
     },
-    init = function()
-    end,
+    init = function() end,
     config = function()
-      require('neo-tree').setup({
-	filesystem = {
-	  hijack_netrw_behaviour = "disabled"
-	},
-      })
-    end
-  }
+      require('neo-tree').setup {
+        filesystem = {
+          hijack_netrw_behaviour = 'disabled',
+        },
+      }
+    end,
+  },
 }
