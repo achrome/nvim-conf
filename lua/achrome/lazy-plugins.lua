@@ -27,6 +27,7 @@ require('lazy').setup({
   require 'achrome.plugins.neotest',
   require 'achrome.plugins.arrow',
   require 'achrome.plugins.lazydev',
+  require 'achrome.plugins.rest',
 }, {
   performance = {
     rtp = {
