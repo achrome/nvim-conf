@@ -1,6 +1,7 @@
 require('lazy').setup({
   require 'achrome.plugins.eldritch-theme',
   'tpope/vim-sleuth',
+  require 'achrome.plugins.rest',
   require 'achrome.plugins.cmp',
   require 'achrome.plugins.telescope',
   require 'achrome.plugins.treesitter',
@@ -27,7 +28,6 @@ require('lazy').setup({
   require 'achrome.plugins.neotest',
   require 'achrome.plugins.arrow',
   require 'achrome.plugins.lazydev',
-  require 'achrome.plugins.rest',
 }, {
   performance = {
     rtp = {
