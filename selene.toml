@@ -1,4 +1,4 @@
 std = 'min'
 
 [lints]
-mixed_tabled = 'allow'
+mixed_tables = 'allow'
