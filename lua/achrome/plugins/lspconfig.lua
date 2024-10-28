@@ -97,6 +97,31 @@ return {
             },
           },
         },
+        ts_ls = {},
+        ruff = {},
+        pylsp = {
+          settings = {
+            pylsp = {
+              plugins = {
+                pycodestyle = {
+                  enabled = false,
+                },
+                pyflakes = {
+                  enabled = false,
+                },
+                mccabe = {
+                  enabled = false,
+                },
+                autopep8 = {
+                  enabled = false,
+                },
+                yapf = {
+                  enabled = false,
+                },
+              },
+            },
+          },
+        },
       }
 
       require('mason').setup()
