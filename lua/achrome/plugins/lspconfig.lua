@@ -87,6 +87,9 @@ return {
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
+      local venv = vim.env.VIRTUAL_ENV or os.getenv 'VIRTUAL_ENV' or os.getenv 'CONDA_PREFIX' or '/usr'
+      local python_executable = venv .. '/bin/python3'
+
       local servers = {
         lua_ls = {
           settings = {
@@ -117,6 +120,10 @@ return {
                 },
                 yapf = {
                   enabled = false,
+                },
+                pylsp_mypy = {
+                  enabled = true,
+                  overrides = { '--python-executable', python_executable, true },
                 },
               },
             },

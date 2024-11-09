@@ -3,6 +3,6 @@ vim.g.maplocalleader = ' '
 
 require 'achrome.options'
 require 'achrome.keymaps'
+require 'achrome.util.python'
 require 'achrome.lazy-bootstrap'
 require 'achrome.lazy-plugins'
-require 'achrome.util.python'
